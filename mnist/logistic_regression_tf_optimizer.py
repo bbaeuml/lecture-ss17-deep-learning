@@ -96,9 +96,6 @@ def main():
 
     cost = cost_fun(y,t)
 
-    # use automatic differentiation to add the nodes to the computation graph for the gradient of the cost 
-    dcost = tf.gradients(cost, W)
-
     # add subgraph to compute gradient descent update step for all variables for
     # cost objective.
     train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cost)
