@@ -4,3 +4,5 @@
 *.pkl
 *.pyc
 .DS_Store
+
+mnist/mnist.pkl.gz
